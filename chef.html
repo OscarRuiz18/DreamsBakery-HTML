@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Bakery</title>
+</head>
+<body style="background-color: #f9e9e7">
+    <div class="header">
+        <a href="#default" class="logo"><img src="./img/DreamsBakery.png" alt="50" width="150" height="150"></a>
+        <h1 align = "center">Bienvenidos a Dreams Bakery</h1>
+        <div class="header-right">
+          <a href="dreamsBakery.html">Home</a>
+          <a href="#contact">Contact</a>
+          <a class="active" href= "chef.html">Chef</a>
+    </div>
+    
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+        <div class="contenedor" ng-app="InventarioApp" ng-controller="InventarioCtrl">
+      
+          <table class="controles">
+            <tr>
+              <th colspan="4" class="celdaControles celdaTitulo">Sistema de gestión de inventarios</th>
+            </tr>
+            
+          </table>
+      
+          <table class="resultados">
+            <tr ng-repeat="item in listaItems | filter:{ref:filterRef, desc:filterDesc}">
+              <td class="celdaResultados celdaIcono" align="center">Código</td>
+              <td class="celdaResultados celdaRef">Cantidad</td>
+              <td class="celdaResultados celdaRef">Unidad</td>
+              <td class="celdaResultados celdaDesc" align="center">Descripción</td>
+              
+            </tr>
+            <tr>
+              <td class="celdaResultados celdaProducto" align="center">H1</td>
+              <td class="celdaResultados celdaProducto" align="center">1</td>
+              <td class="celdaResultados celdaProducto" align="center">Kg</td>
+              <td class="celdaResultados celdaProducto" align="center">Harina de Trigo</td>              
+            </tr>
+            <tr>
+              <td class="celdaResultados celdaProducto" align="center">H2</td>
+              <td class="celdaResultados celdaProducto" align="center">25</td>
+              <td class="celdaResultados celdaProducto" align="center">Pza</td>
+              <td class="celdaResultados celdaProducto" align="center">Huevos</td>              
+            </tr>
+            <tr>
+              <td class="celdaResultados celdaProducto" align="center">M1</td>
+              <td class="celdaResultados celdaProducto" align="center">20</td>
+              <td class="celdaResultados celdaProducto" align="center">Kg</td>
+              <td class="celdaResultados celdaProducto" align="center">Manteca de Cerdo</td>              
+            </tr>
+          </table>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="contenedor" ng-app="InventarioApp" ng-controller="InventarioCtrl">
+      
+          <table class="controles">
+            <tr>
+              <th colspan="4" class="celdaControles celdaTitulo">Pasteles pendientes</th>
+            </tr>
+            
+          </table>
+      
+          <table class="resultados">
+            <tr ng-repeat="item in listaItems | filter:{ref:filterRef, desc:filterDesc}">
+              <td class="celdaResultados celdaIcono" align="center">Código</td>
+              <td class="celdaResultados celdaRef">Cantidad</td>
+              <td class="celdaResultados celdaRef">Nombre</td>
+              <td class="celdaResultados celdaDesc" align="center">Descripción</td>
+              
+            </tr>
+            <tr>
+              <td class="celdaResultados celdaProducto" align="center">001/2022</td>
+              <td class="celdaResultados celdaProducto" align="center">1</td>
+              <td class="celdaResultados celdaProducto" align="center">Rodrigo Placencia</td>
+              <td class="celdaResultados celdaProducto" align="center">Pastel de vainilla con relleno de manjar y decorado de frutas</td>              
+            </tr>
+            <tr>
+              <td class="celdaResultados celdaProducto" align="center">002/2022</td>
+              <td class="celdaResultados celdaProducto" align="center">1</td>
+              <td class="celdaResultados celdaProducto" align="center">Oscar Ruiz</td>
+              <td class="celdaResultados celdaProducto" align="center">Pstel de chocolote relleno de ganache y decorado con betún</td>              
+            </tr>
+            <tr>
+              <td class="celdaResultados celdaProducto" align="center">003/2022</td>
+              <td class="celdaResultados celdaProducto" align="center">1</td>
+              <td class="celdaResultados celdaProducto" align="center">Rafael Hernandez</td>
+              <td class="celdaResultados celdaProducto" align="center">Pastel de vainilla relleno de mermelada decorado con Fondant </td>              
+            </tr>
+          </table>
+        </div>
+
+      </body>
+</div>
+</body>
+</html>
+
+<footer class="footer" >
+        
+    <p><img src="./img/whatsapp.png" alt="18" width="18"> (967)-1486257</p>
+    <a href="https://www.google.com.mx/maps/place/Catedral+de+San+Crist%C3%B3bal+de+las+Casas/@16.7375831,-92.6399627,17z/data=!3m1!4b1!4m5!3m4!1s0x85ed453df3525fdb:0x6b2596848ccc3f87!8m2!3d16.737578!4d-92.637774" target="_blank"> <img src="./img/hogar.png" alt="18" width="18">San Cristóbal de las Casas, Chiapas</a>
+    <p><img src="./img/email.png" alt="18" width="18"> launchx00297@innovaccion.mx</p>
+    <p><img src="./img/open.png" alt="18" width="18"> 10:00 hrs - 20:00 hrs</p>
+    <p></p>
+    <p>&copy; 2022 Dreams Bakery</p>
+  </footer>
